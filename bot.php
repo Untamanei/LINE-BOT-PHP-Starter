@@ -22,15 +22,7 @@ if($arrJson['events'][0]['message']['text'] == "pid"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "wi";
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "pid";
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "spec";
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "stock";
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "buy";
+  $arrPostData['messages'][0]['text'] = "wi \n ";
   
 }else if($arrJson['events'][0]['message']['text'] == "ทำอะไรได้บ้าง"){
   $arrPostData = array();
@@ -42,7 +34,9 @@ if($arrJson['events'][0]['message']['text'] == "pid"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ตรวจสอบตัวสะกดและตัวพิมพ์เล็กพิมพ์ใหญ่";
+  $arrPostData['messages'][0]['text'] = "ตรวจสอบตัวสะกด \n
+                                         ตัวพิมพ์เล็กพิมพ์ใหญ่ \n
+                                         พิมพ์ help เพื่อหาคำสั่งของนายช่าง";
 }
  
  
