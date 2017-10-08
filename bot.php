@@ -21,9 +21,11 @@ if($arrJson['events'][0]['message']['text'] == "wi"){
   else if($arrJson['events'][0]['message']['text'] == "pid"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "image";
-  $arrPostData['messages'][0]['originalContentUrl'] = "https://www.uppic.org/thumb-8FD2_59DA4617.jpg";
-  $arrPostData['messages'][0]['previewImageUrl'] = "https://www.uppic.org/thumb-8FD2_59DA4617.jpg";
+  //$arrPostData['messages'][0]['type'] = "image";
+  //$arrPostData['messages'][0]['originalContentUrl'] = "https://www.uppic.org/thumb-8FD2_59DA4617.jpg";
+  //$arrPostData['messages'][0]['previewImageUrl'] = "https://www.uppic.org/thumb-8FD2_59DA4617.jpg";
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "https://drive.google.com/open?id=0B-XvT8qgmPvjU0lHcURybjV5RG8"; 
   }
 
   else if($arrJson['events'][0]['message']['text'] == "spec "){
