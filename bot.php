@@ -17,32 +17,28 @@ if($arrJson['events'][0]['message']['text'] == "pid"){
   $arrPostData['messages'][0]['type'] = "image";
   $arrPostData['messages'][0]['originalContentUrl'] = "https://www.uppic.org/thumb-B016_59DA2F65.jpg";
   $arrPostData['messages'][0]['previewImageUrl'] = "https://www.uppic.org/thumb-B016_59DA2F65.jpg";
-    
-}else if($arrJson['events'][0]['message']['text'] == "help"){
+  }
+  
+  else if($arrJson['events'][0]['message']['text'] == "help"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "wi \n 
-                                         pid \n
-                                         spec \n
-                                         stock \n
-                                         buy";
+  $arrPostData['messages'][0]['text'] = "wi = work instruction\npid = piping and instrument diagram\nspec = รายละเอียดอุปกรณ์\nstock = ตรวจเช็คจำนวอุปกรณ์\nbuy = สั่งซื้ออุปกรณ์";  
+  }
   
-}else if($arrJson['events'][0]['message']['text'] == "ทำอะไรได้บ้าง"){
+  else if($arrJson['events'][0]['message']['text'] == "ทำอะไรได้บ้าง"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
-
-}else{
+  }
+  
+  else{
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ตรวจสอบตัวสะกด \n
-                                         ตัวพิมพ์เล็กพิมพ์ใหญ่ \n
-                                         พิมพ์ help เพื่อหาคำสั่งของนายช่าง";
+  $arrPostData['messages'][0]['text'] = "ตรวจสอบตัวสะกด\nตัวพิมพ์เล็กพิมพ์ใหญ่\nพิมพ์ help เพื่อหาคำสั่งของนายช่าง";
 }
- 
  
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,$strUrl);
