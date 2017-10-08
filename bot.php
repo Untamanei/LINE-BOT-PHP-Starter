@@ -34,8 +34,6 @@ $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
 	  $arrPostData['messages'][0]['type'] = "text";
 	  $arrPostData['messages'][0]['text'] = "ฉันไม่เข้าใจคำสั่ง";
 	}
-			$post = json_encode($data);
-			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
 			$ch = curl_init($url);
 			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
