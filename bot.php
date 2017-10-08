@@ -11,12 +11,13 @@ $arrHeader = array();
 $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
  
-if($arrJson['events'][0]['message']['text'] == "pru_pid"){
+if($arrJson['events'][0]['message']['text'] == "pid"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "\uDBC0\uDC84 LINE emoji";
-
+  $arrPostData['messages'][0]['type'] = "image";
+  $arrPostData['messages'][0]['originalContentUrl'] = "https://drive.google.com/open?id=0B-XvT8qgmPvjT2ZOVVFacXVYZW8";
+  $arrPostData['messages'][0]['previewImageUrl'] = "https://drive.google.com/open?id=0B-XvT8qgmPvjT2ZOVVFacXVYZW8";
+     
 }else if($arrJson['events'][0]['message']['text'] == "ชื่ออะไร"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
