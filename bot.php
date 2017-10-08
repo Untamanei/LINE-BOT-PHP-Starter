@@ -21,8 +21,8 @@ if (!is_null($events['events'])) {
 				//'type' => 'text',
 				//'text' => "Hello world"
 				//'text' => $text
-				'type': 'test',
-    				'text': "\uDBC0\uDC84 LINE emoji"
+				'type' => 'test',
+    				'text'=> "\uDBC0\uDC84 LINE emoji"
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
