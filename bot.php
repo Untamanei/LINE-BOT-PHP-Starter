@@ -22,8 +22,8 @@ if($arrJson['events'][0]['message']['text'] == "wi"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "image";
-  $arrPostData['messages'][0]['originalContentUrl'] = "https://www.uppic.org/thumb-CC4F_59DA4590.jpg";
-  $arrPostData['messages'][0]['previewImageUrl'] = "https://www.uppic.org/thumb-CC4F_59DA4590.jpg";
+  $arrPostData['messages'][0]['originalContentUrl'] = "https://www.uppic.org/thumb-8FD2_59DA4617.jpg";
+  $arrPostData['messages'][0]['previewImageUrl'] = "https://www.uppic.org/thumb-8FD2_59DA4617.jpg";
   }
 
   else if($arrJson['events'][0]['message']['text'] == "spec "){
