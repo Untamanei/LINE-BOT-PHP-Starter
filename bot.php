@@ -11,19 +11,23 @@ $arrHeader = array();
 $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
  
-if($arrJson['events'][0]['message']['text'] == "pid" || "Pid"){
+if($arrJson['events'][0]['message']['text'] == "pid"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "image";
   $arrPostData['messages'][0]['originalContentUrl'] = "https://www.uppic.org/thumb-B016_59DA2F65.jpg";
   $arrPostData['messages'][0]['previewImageUrl'] = "https://www.uppic.org/thumb-B016_59DA2F65.jpg";
     
-}else if($arrJson['events'][0]['message']['text'] == "ชื่ออะไร"){
+}else if($arrJson['events'][0]['message']['text'] == "help"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันยังไม่มีชื่อนะ";
-
+  $arrPostData['messages'][0]['text'] = "wi"; 
+  $arrPostData['messages'][0]['text'] = "pid";
+  $arrPostData['messages'][0]['text'] = "spec";
+  $arrPostData['messages'][0]['text'] = "stock";
+  $arrPostData['messages'][0]['text'] = "buy";
+  
 }else if($arrJson['events'][0]['message']['text'] == "ทำอะไรได้บ้าง"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
@@ -34,7 +38,7 @@ if($arrJson['events'][0]['message']['text'] == "pid" || "Pid"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันไม่เข้าใจคำสั่ง";
+  $arrPostData['messages'][0]['text'] = "ตรวจสอบตัวสะกดและตัวพิมพ์เล็กพิมพ์ใหญ่";
 }
  
  
