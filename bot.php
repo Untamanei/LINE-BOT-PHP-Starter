@@ -7,11 +7,11 @@ $content = file_get_contents('php://input');
 $events = json_decode($content, true);
 
 // Validate parsed JSON data
-$strUrl = "https://api.line.me/v2/bot/message/reply";
+//$strUrl = "https://api.line.me/v2/bot/message/reply";
  
-$arrHeader = array();
-$arrHeader[] = "Content-Type: application/json";
-$arrHeader[] = "Authorization: Bearer {$strAccessToken}";
+//$arrHeader = array();
+//$arrHeader[] = "Content-Type: application/json";
+//$arrHeader[] = "Authorization: Bearer {$strAccessToken}";
 
 if (!is_null($events['events'])) {
 	// Loop through each event
@@ -35,10 +35,6 @@ if (!is_null($events['events'])) {
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
 			];
-		}
-	}	
-}	
-
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
@@ -50,6 +46,11 @@ if (!is_null($events['events'])) {
 			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 			$result = curl_exec($ch);
 			curl_close($ch);
+		}
+	}	
+}	
+
+			
 
 			//echo $result . "\r\n";
 //echo "OK";
