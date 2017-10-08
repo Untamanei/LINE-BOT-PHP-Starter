@@ -15,7 +15,7 @@ if($arrJson['events'][0]['message']['text'] == "wi"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "https://drive.google.com/open?id=0B-XvT8qgmPvja3drT2JzYy1ldTQ";
+  $arrPostData['messages'][0]['text'] = "https://drive.google.com/open?id=0B-XvT8qgmPvjekU2akhhaFhYZDg";
   }
 
   else if($arrJson['events'][0]['message']['text'] == "pid"){
@@ -28,95 +28,193 @@ if($arrJson['events'][0]['message']['text'] == "wi"){
   $arrPostData['messages'][0]['text'] = "https://drive.google.com/open?id=0B-XvT8qgmPvjU0lHcURybjV5RG8"; 
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "spec "){
+  else if($arrJson['events'][0]['message']['text'] == "spec FL101"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
+  $arrPostData['messages'][0]['text'] = "Description\n============\n\nOperating Pressure : 4000 psi\nInstall date : 12/2016\nCallibrate : -";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "spec "){
+  else if($arrJson['events'][0]['message']['text'] == "spec PI102"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
+   $arrPostData['messages'][0]['text'] = "Description\n============\n\nOperating Pressure : 4000 psi\nInstall date : 12/2016\nCallibrate : -";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "spec "){
+  else if($arrJson['events'][0]['message']['text'] == "spec BV103"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
+ $arrPostData['messages'][0]['text'] = "Description\n============\n\nOperating Pressure : 4000 psi\nInstall date : 12/2016\nCallibrate : -";
+  }  
+
+  else if($arrJson['events'][0]['message']['text'] == "spec PCV104"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+   $arrPostData['messages'][0]['text'] = "Description\n============\n\nOperating Pressure : 4000 psi\nInstall date : 12/2016\nCallibrate : -";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "spec "){
+  else if($arrJson['events'][0]['message']['text'] == "spec PI105"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
+   $arrPostData['messages'][0]['text'] = "Description\n============\n\nOperating Pressure : 4000 psi\nInstall date : 12/2016\nCallibrate : -";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "spec "){
+  else if($arrJson['events'][0]['message']['text'] == "spec CV106"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
+   $arrPostData['messages'][0]['text'] = "Description\n============\n\nOperating Pressure : 4000 psi\nInstall date : 12/2016\nCallibrate : -";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "spec "){
+  else if($arrJson['events'][0]['message']['text'] == "spec PCV115"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
+   $arrPostData['messages'][0]['text'] = "Description\n============\n\nOperating Pressure : 4000 psi\nInstall date : 12/2016\nCallibrate : -";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "spec "){
+  else if($arrJson['events'][0]['message']['text'] == "spec BV116"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
+   $arrPostData['messages'][0]['text'] = "Description\n============\n\nOperating Pressure : 4000 psi\nInstall date : 12/2016\nCallibrate : -";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "spec "){
+  else if($arrJson['events'][0]['message']['text'] == "spec PSV118"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
+   $arrPostData['messages'][0]['text'] = "Description\n============\n\nOperating Pressure : 4000 psi\nInstall date : 12/2016\nCallibrate : -";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "spec "){
+  else if($arrJson['events'][0]['message']['text'] == "stock FL101"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
+  $arrPostData['messages'][0]['text'] = "0 ea.";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "spec "){
+  else if($arrJson['events'][0]['message']['text'] == "stock PI102"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
+  $arrPostData['messages'][0]['text'] = "0 ea.";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "spec "){
+  else if($arrJson['events'][0]['message']['text'] == "stock BV103"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
+  $arrPostData['messages'][0]['text'] = "0 ea.";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "spec "){
+  else if($arrJson['events'][0]['message']['text'] == "stock PCV104"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
+  $arrPostData['messages'][0]['text'] = "0 ea.";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "spec "){
+  else if($arrJson['events'][0]['message']['text'] == "stock PI105"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
+  $arrPostData['messages'][0]['text'] = "0 ea.";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "stock CV106"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "0 ea.";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "stock PCV115"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "0 ea.";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "stock BV116"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "0 ea.";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "stock PSV118"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "0 ea.";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "buy FL101"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "PN : \nLead Time : 3-4 weeks\nCost : 2500 Baht\nBrand : \nSupplier : Fint Fluid\n\nSale\n---------\nSipakorn\nsippakorn@fintfluid.com\n0894444564";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "buy PI102"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "PN : \nLead Time : 3-4 weeks\nCost : 2500 Baht\nBrand : \nSupplier : Fint Fluid\n\nSale\n---------\nSipakorn\nsippakorn@fintfluid.com\n0894444564";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "buy BV103"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "PN : \nLead Time : 3-4 weeks\nCost : 2500 Baht\nBrand : \nSupplier : Fint Fluid\n\nSale\n---------\nSipakorn\nsippakorn@fintfluid.com\n0894444564";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "buy PCV104"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "PN : \nLead Time : 3-4 weeks\nCost : 2500 Baht\nBrand : \nSupplier : Fint Fluid\n\nSale\n---------\nSipakorn\nsippakorn@fintfluid.com\n0894444564";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "buy PI105"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "PN : \nLead Time : 3-4 weeks\nCost : 2500 Baht\nBrand : \nSupplier : Fint Fluid\n\nSale\n---------\nSipakorn\nsippakorn@fintfluid.com\n0894444564";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "buy CV106"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "PN : \nLead Time : 3-4 weeks\nCost : 2500 Baht\nBrand : \nSupplier : Fint Fluid\n\nSale\n---------\nSipakorn\nsippakorn@fintfluid.com\n0894444564";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "buy PCV115"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "PN : \nLead Time : 3-4 weeks\nCost : 2500 Baht\nBrand : \nSupplier : Fint Fluid\n\nSale\n---------\nSipakorn\nsippakorn@fintfluid.com\n0894444564";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "buy BV116"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "PN : \nLead Time : 3-4 weeks\nCost : 2500 Baht\nBrand : \nSupplier : Fint Fluid\n\nSale\n---------\nSipakorn\nsippakorn@fintfluid.com\n0894444564";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "buy PSV118"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "PN : \nLead Time : 3-4 weeks\nCost : 2500 Baht\nBrand : \nSupplier : Fint Fluid\n\nSale\n---------\nSipakorn\nsippakorn@fintfluid.com\n0894444564";
   }
 
   else if($arrJson['events'][0]['message']['text'] == "help"){
