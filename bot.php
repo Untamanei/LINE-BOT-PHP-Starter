@@ -53,7 +53,7 @@ if($arrJson['events'][0]['message']['text'] == "wi"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-   $arrPostData['messages'][0]['text'] = "Description\n============\n\nOperating Pressure : 4000 psi\nInstall date : 12/2016\nCallibrate : -";
+   $arrPostData['messages'][0]['text'] = "Description\n================\nVaporizing Regulator\nMaximum Inlet : 3500 psig\nPressure Control Range : 500 psi\nHeater : 200 W\nPower : 240 V\nTemperature Controller 104-193 oC\nCv : 0.06\nInstall date : 12/2016\nCallibrate : -";
   }
 
   else if($arrJson['events'][0]['message']['text'] == "spec PI105"){
@@ -179,7 +179,7 @@ if($arrJson['events'][0]['message']['text'] == "wi"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "PN : \nLead Time : 3-4 weeks\nCost : 2500 Baht\nBrand : \nSupplier : Fint Fluid\n\nSale\n---------\nSipakorn\nsippakorn@fintfluid.com\n0894444564";
+  $arrPostData['messages'][0]['text'] = "PN : AVR4SP5240EHX\nBrand : Parker\nLead Time : 10-12 weeks\nCost : 59,300 Baht\nSupplier : Fint Fluid\n\nSaleperson\n-------------\nSippakorn\nE-mail : sippakorn@fintfluid.com\nTel : 0894444564";
   }
 
   else if($arrJson['events'][0]['message']['text'] == "buy PI105"){
