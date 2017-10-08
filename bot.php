@@ -15,9 +15,9 @@ if($arrJson['events'][0]['message']['text'] == "pid"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "image";
-  $arrPostData['messages'][0]['originalContentUrl'] = "https://drive.google.com/open?id=0B-XvT8qgmPvjT2ZOVVFacXVYZW8";
-  $arrPostData['messages'][0]['previewImageUrl'] = "https://drive.google.com/open?id=0B-XvT8qgmPvjT2ZOVVFacXVYZW8";
-     
+  $arrPostData['messages'][0]['originalContentUrl'] = "https://www.uppic.org/thumb-B016_59DA2F65.jpg";
+  $arrPostData['messages'][0]['previewImageUrl'] = "https://www.uppic.org/thumb-B016_59DA2F65.jpg";
+    
 }else if($arrJson['events'][0]['message']['text'] == "ชื่ออะไร"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
