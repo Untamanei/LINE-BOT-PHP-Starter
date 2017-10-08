@@ -22,7 +22,11 @@ if($arrJson['events'][0]['message']['text'] == "pid"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "wi \n ";
+  $arrPostData['messages'][0]['text'] = "wi \n 
+                                         pid \n
+                                         spec \n
+                                         stock \n
+                                         buy";
   
 }else if($arrJson['events'][0]['message']['text'] == "ทำอะไรได้บ้าง"){
   $arrPostData = array();
