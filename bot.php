@@ -11,14 +11,21 @@ $arrHeader = array();
 $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
  
-if($arrJson['events'][0]['message']['text'] == "wi"){
+if($arrJson['events'][0]['message']['text'] == "WI PRU"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "https://drive.google.com/open?id=0B-XvT8qgmPvjekU2akhhaFhYZDg";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "pid"){
+  else if($arrJson['events'][0]['message']['text'] == "WI LPGAir"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "1.	ตรวจเช็คการเดินเครื่องเสร็จ\n2.	แหล่งจ่ายไฟฟ้า : ตรวจเช็ค Power Lamp\n3.	เช็คอุณหภูมิน้ำ : ประมาณ 60-65 oC ใช้เวลาประมาณ 30 -40 นาที\n4.	เปิดวาล์วทางเข้าหม้อต้มแก๊ส : เปิดช้า ๆ (ในกรณีรีบเปิด อึปกรณ์ปิดกั้นจะทำงาน)\n5.	เช็คเกจวัดความดันหม้อต้มแก๊ส : เปรียบเทียบกับความดันของภาชนะและถังเก็บ\n6.	เปิดวาล์วทางออกหม้อต้มแก๊ส : เปิดช้า ๆ (ในกรณีรีบเปิด อึปกรณ์ปิดกั้นจะทำงาน)\n7.	ใช้แก๊ส";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "PID PRU"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   //$arrPostData['messages'][0]['originalContentUrl'] = "https://image.goosiam.com/imgupload/upload43/uNQ4LdGD2yyd.jpg";
@@ -30,6 +37,14 @@ if($arrJson['events'][0]['message']['text'] == "wi"){
   $arrPostData['messages'][0]['previewImageUrl'] = "https://image.goosiam.com/imgupload/upload43/49FrxSRkmDsj.jpg";
   }
 
+  else if($arrJson['events'][0]['message']['text'] == "PID LPGAir"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "image";
+  $arrPostData['messages'][0]['originalContentUrl'] = "https://image.goosiam.com/imgupload/upload43/TS0AptL2oFAU.jpg";
+  $arrPostData['messages'][0]['previewImageUrl'] = "https://image.goosiam.com/imgupload/upload43/TS0AptL2oFAU.jpg";
+  }
+ 
   else if($arrJson['events'][0]['message']['text'] == "spec FL101"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
@@ -223,7 +238,7 @@ if($arrJson['events'][0]['message']['text'] == "wi"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "wi = work instruction\npid = piping and instrument diagram\nspec = รายละเอียดอุปกรณ์\nstock = ตรวจเช็คจำนวอุปกรณ์\nbuy = สั่งซื้ออุปกรณ์";  
+  $arrPostData['messages'][0]['text'] = "WI = work instruction\nPID = piping and instrument diagram\nspec = รายละเอียดอุปกรณ์\nstock = ตรวจเช็คจำนวอุปกรณ์\nbuy = สั่งซื้ออุปกรณ์";  
   }
 
   else{
