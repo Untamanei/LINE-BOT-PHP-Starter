@@ -20,7 +20,7 @@ if($arrJson['events'][0]['message']['text'] == "wi"){
 
   else if($arrJson['events'][0]['message']['text'] == "pid"){
   $arrPostData = array();
-  $arrPostData['replyToken'] = $arrJson['events'][1]['replyToken'];
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   //$arrPostData['messages'][0]['originalContentUrl'] = "https://image.goosiam.com/imgupload/upload43/uNQ4LdGD2yyd.jpg";
   //$arrPostData['messages'][0]['previewImageUrl'] = "https://image.goosiam.com/imgupload/upload43/uNQ4LdGD2yyd.jpg";
   $arrPostData['messages'][0]['type'] = "text";
