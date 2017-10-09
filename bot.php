@@ -11,21 +11,21 @@ $arrHeader = array();
 $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
  
-if($arrJson['events'][0]['message']['text'] == "WI PRU"){
+if($arrJson['events'][0]['message']['text'] == "Wi PRU"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "1.นำสาย Flexible Hose มาต่อเข้ากับหัว Quick Connect\n2.นำสายก๊าซมาต่อเข้ากับหัว Quick Connect ที่นำไปใช้งาน\n3.เปิดวาล์วก่อน Vaporizing Regulator ช้า ๆ เพื่อไม่ให้เกิดความเสียหาย\n4.ปรับแรงดัน High Flow Regulator ตามการใช้งาน\n5.เปิดวาล์วหลัง High Flow Regulator\n6.เปิดสวิทซ์ Heater และ Mass Flow Meter\n7.เปิดวาล์วก๊าซนำไปใช้งาน\n8.เมื่อใช้งานเสร็จปิดวาล์วและ Vent ก๊าซออกระบบให้หมด";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "WI LPGAir"){
+  else if($arrJson['events'][0]['message']['text'] == "Wi LPGAir"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "1.ตรวจเช็คการเดินเครื่องเสร็จ\n2.แหล่งจ่ายไฟฟ้า : ตรวจเช็ค Power Lamp\n3.เช็คอุณหภูมิน้ำ : ประมาณ 60-65 oC ใช้เวลาประมาณ 30 -40 นาที\n4.เปิดวาล์วทางเข้าหม้อต้มแก๊ส : เปิดช้า ๆ (ในกรณีรีบเปิดอุปกรณ์ปิดกั้นจะทำงาน)\n5.เช็คเกจวัดความดันหม้อต้มแก๊ส : เปรียบเทียบกับความดันของภาชนะและถังเก็บ\n6.เปิดวาล์วทางออกหม้อต้มแก๊ส : เปิดช้า ๆ (ในกรณีรีบเปิด อุปกรณ์ปิดกั้นจะทำงาน)\n7.ใช้แก๊ส";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "PID PRU"){
+  else if($arrJson['events'][0]['message']['text'] == "Pid PRU"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   //$arrPostData['messages'][0]['originalContentUrl'] = "https://image.goosiam.com/imgupload/upload43/uNQ4LdGD2yyd.jpg";
@@ -37,7 +37,7 @@ if($arrJson['events'][0]['message']['text'] == "WI PRU"){
   $arrPostData['messages'][0]['previewImageUrl'] = "https://image.goosiam.com/imgupload/upload43/49FrxSRkmDsj.jpg";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "PID LPGAir"){
+  else if($arrJson['events'][0]['message']['text'] == "Pid LPGAir"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "image";
@@ -45,32 +45,39 @@ if($arrJson['events'][0]['message']['text'] == "WI PRU"){
   $arrPostData['messages'][0]['previewImageUrl'] = "https://image.goosiam.com/imgupload/upload43/TS0AptL2oFAU.jpg";
   }
  
-  else if($arrJson['events'][0]['message']['text'] == "spec PRU PCV104"){
+  else if($arrJson['events'][0]['message']['text'] == "Spec PRU PCV104"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
    $arrPostData['messages'][0]['text'] = "Description\n================\nVaporizing Regulator\nMaximum Inlet : 3500 psig\nPressure Control Range : 500 psi\nHeater : 200 W\nPower : 240 V\nTemperature Controller 104-193 oC\nCv : 0.06\n--------------\nInstall date : 12/2016\n--------------\nCallibrate : -";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "stock PRU PCV104"){
+  else if($arrJson['events'][0]['message']['text'] == "Stock PRU PCV104"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "0 ea.";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "buy PRU PCV104"){
+  else if($arrJson['events'][0]['message']['text'] == "Buy PRU PCV104"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "PN : AVR4SP5240EHX\nBrand : Parker\nLead Time : 10-12 weeks\nCost : 59,300 Baht\nSupplier : Fint Fluid\n\nSaleperson\n-------------\nSippakorn\nE-mail : sippakorn@fintfluid.com\nTel : 0894444564";
   }
 
+  else if($arrJson['events'][0]['message']['text'] == "Troubshooting LPGAir"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "1.ความผิดปกติอุณหภูมิน้ำ\n -	ความผิดปกติแหล่งจ่ายไฟฟ้า\n -	ระดับน้ำต่ำหรือสวิตซ์ระดับน้ำเสีย\n -	ฟิวส์ถูกละลายขาด\n  -	Magnetic Contactor เสีย\n -	อุปกรณ์กำเนิดความร้อนไฟฟ้าเสีย\n2.การจ่ายแก๊สผิดปกติ\n -	วาล์วทางเข้าหม้อต้มแก๊สทำงานผิดปกติ\n -	อุณหภูมิน้ำผิดปกติ\n -	ใช้แก๊สมากกว่าปริมาณที่กำหนดไว้\n 3.มีน้ำแข็งที่ทางออกของเครื่องช่วยระเหยแก๊ส\n -	อุปกรณ์ปิดกั้นแก๊สเหลวรั่วเสีย\n 4.เบรกเกอร์ตัดไฟ\n -	เบรกเกอร์ตัด\n -	ฮีตเตอร์ขาด\n -	สวิตซ์ระดับน้ำชำรุด\n -	ไฟช็อต";
+  }
+
   else if($arrJson['events'][0]['message']['text'] == "help"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "นายช่างดูแลระบบ 2 ระบบ\n1.PRU\n2.LPGAir\n-----------------\nWI : work instruction\nEx. WI PRU\n\nPID = piping and instrument diagram\nEx. PID PRU\n\nspec = รายละเอียดอุปกรณ์\nEx. spec PRU PCV104\n\nstock = ตรวจเช็คจำนวอุปกรณ์\nEx. stock PRU PCV104\n\nbuy = สั่งซื้ออุปกรณ์\nEx. buy PRU PCV104";  
+  $arrPostData['messages'][0]['text'] = "นายช่างดูแลระบบ 2 ระบบ\n1.PRU\n2.LPGAir\n-----------------\nWI : work instruction\nEx. WIiPRU\n\nPID = piping and instrument diagram\nEx. Pid PRU\n\nspec = รายละเอียดอุปกรณ์\nEx. Spec PRU PCV104\n\nstock = ตรวจเช็คจำนวอุปกรณ์\nEx. Stock PRU PCV104\n\nbuy = สั่งซื้ออุปกรณ์\nEx. Buy PRU PCV104";  
   }
 
   else{
