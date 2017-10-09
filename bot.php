@@ -45,21 +45,21 @@ if($arrJson['events'][0]['message']['text'] == "Wi PRU"){
   $arrPostData['messages'][0]['previewImageUrl'] = "https://image.goosiam.com/imgupload/upload43/TS0AptL2oFAU.jpg";
   }
  
-  else if($arrJson['events'][0]['message']['text'] == "Spec PRU PCV104"){
+  else if($arrJson['events'][0]['message']['text'] == "Spec PRU PCV105"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
    $arrPostData['messages'][0]['text'] = "Description\n================\nVaporizing Regulator\nMaximum Inlet : 3500 psig\nPressure Control Range : 500 psi\nHeater : 200 W\nPower : 240 V\nTemperature Controller 104-193 oC\nCv : 0.06\n--------------\nInstall date : 12/2016\n--------------\nCallibrate : -";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "Stock PRU PCV104"){
+  else if($arrJson['events'][0]['message']['text'] == "Stock PRU PCV105"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "0 ea.";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "Buy PRU PCV104"){
+  else if($arrJson['events'][0]['message']['text'] == "Buy PRU PCV105"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
