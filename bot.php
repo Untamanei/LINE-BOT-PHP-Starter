@@ -21,11 +21,12 @@ if($arrJson['events'][0]['message']['text'] == "wi"){
   else if($arrJson['events'][0]['message']['text'] == "pid"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "image";
+  
     //$arrPostData['messages'][0]['originalContentUrl'] = "https://image.goosiam.com/imgupload/upload43/uNQ4LdGD2yyd.jpg";
   //$arrPostData['messages'][0]['previewImageUrl'] = "https://image.goosiam.com/imgupload/upload43/uNQ4LdGD2yyd.jpg";
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "https://drive.google.com/open?id=0B-XvT8qgmPvjU0lHcURybjV5RG8"; 
+  $arrPostData['messages'][0]['type'] = "image";
   $arrPostData['messages'][0]['originalContentUrl'] = "https://image.goosiam.com/imgupload/upload43/WJGpSb8Wmr8Z.jpg";
   $arrPostData['messages'][0]['previewImageUrl'] = "https://image.goosiam.com/imgupload/upload43/WJGpSb8Wmr8Z.jpg";
   }
@@ -43,7 +44,6 @@ else if($arrJson['events'][0]['message']['text'] == "pid1"){
 else if($arrJson['events'][0]['message']['text'] == "pid1"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "image";
     //$arrPostData['messages'][0]['originalContentUrl'] = "https://image.goosiam.com/imgupload/upload43/uNQ4LdGD2yyd.jpg";
   //$arrPostData['messages'][0]['previewImageUrl'] = "https://image.goosiam.com/imgupload/upload43/uNQ4LdGD2yyd.jpg";
   $arrPostData['messages'][0]['type'] = "text";
