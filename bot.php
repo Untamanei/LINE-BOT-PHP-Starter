@@ -98,7 +98,7 @@ if($arrJson['events'][0]['message']['text'] == "Wi PRU"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "นายช่างดูแลระบบ 2 ระบบ\n1.PRU\n2.LPGAir\n-----------------\nWI : work instruction\nEx. WIiPRU\n\nPID = piping and instrument diagram\nEx. Pid PRU\n\nspec = รายละเอียดอุปกรณ์\nEx. Spec PRU PCV104\n\nstock = ตรวจเช็คจำนวอุปกรณ์\nEx. Stock PRU PCV104\n\nbuy = สั่งซื้ออุปกรณ์\nEx. Buy PRU PCV104";  
+  $arrPostData['messages'][0]['text'] = "นายช่างดูแลระบบ 2 ระบบ\n1.PRU\n2.LPGAir\n-----------------\nWi : work instruction\nEx. Wi PRU\n\nPid = piping and instrument diagram\nEx. Pid PRU\n\nSpec = รายละเอียดอุปกรณ์\nEx. Spec PRU PCV104\n\nStock = ตรวจเช็คจำนวอุปกรณ์\nEx. Stock PRU PCV104\n\nBuy = สั่งซื้ออุปกรณ์\nEx. Buy PRU PCV104\nTroubleshooting = ปัญหา\nEx. Troubleshooting PRU";  
   }
 
   else{
