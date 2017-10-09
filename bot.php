@@ -18,7 +18,7 @@ if($arrJson['events'][0]['message']['text'] == "Wi PRU"){
   $arrPostData['messages'][0]['text'] = "1.นำสาย Flexible Hose มาต่อเข้ากับหัว Quick Connect\n2.นำสายก๊าซมาต่อเข้ากับหัว Quick Connect ที่นำไปใช้งาน\n3.เปิดวาล์วก่อน Vaporizing Regulator ช้า ๆ เพื่อไม่ให้เกิดความเสียหาย\n4.ปรับแรงดัน High Flow Regulator ตามการใช้งาน\n5.เปิดวาล์วหลัง High Flow Regulator\n6.เปิดสวิทซ์ Heater และ Mass Flow Meter\n7.เปิดวาล์วก๊าซนำไปใช้งาน\n8.เมื่อใช้งานเสร็จปิดวาล์วและ Vent ก๊าซออกระบบให้หมด";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "Wi LPGAir"){
+  else if($arrJson['events'][0]['message']['text'] == "Wi LPG"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
@@ -37,7 +37,7 @@ if($arrJson['events'][0]['message']['text'] == "Wi PRU"){
   $arrPostData['messages'][0]['previewImageUrl'] = "https://image.goosiam.com/imgupload/upload43/49FrxSRkmDsj.jpg";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "Pid LPGAir"){
+  else if($arrJson['events'][0]['message']['text'] == "Pid LPG"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "image";
@@ -66,28 +66,35 @@ if($arrJson['events'][0]['message']['text'] == "Wi PRU"){
   $arrPostData['messages'][0]['text'] = "PN : AVR4SP5240EHX\nBrand : Parker\nLead Time : 10-12 weeks\nCost : 59,300 Baht\nSupplier : Fint Fluid\n\nSaleperson\n-------------\nSippakorn\nE-mail : sippakorn@fintfluid.com\nTel : 0894444564";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "Spec LPGAir 16"){
+  else if($arrJson['events'][0]['message']['text'] == "Spec LPG 16"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
    $arrPostData['messages'][0]['text'] = "Description\n================\nHigh Pressure Regulator\nFluid : LP-Gas\nPressure Control Range : 25-50 psi\nCapacity : 12,000,000 BTU/hr. LPG\n--------------\nInstall date : 8/2017\n--------------\nCallibrate : -";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "Stock LPGAir 16"){
+  else if($arrJson['events'][0]['message']['text'] == "Stock LPG 16"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "0 ea.";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "Buy LPGAir 16"){
+  else if($arrJson['events'][0]['message']['text'] == "Buy LPG 16"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "PN : 1588VL\nBrand : REGO\nLead Time : 10-12 weeks\nCost : 59,300 Baht\nSupplier : CECO\n\nSaleperson\n-------------\nSippakorn\nE-mail : ceco@cecogas.com\nTel : 027227929";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "Troubleshooting LPGAir"){
+  else if($arrJson['events'][0]['message']['text'] == "Troubleshooting PRU"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "1.มีน้ำแข็งเกาะบริเวณ Vaporizing Regulator มาก\n -	ไม่ได้เปิด Heater\n -	อัตราการไหลมากเกินที่กำหนดไว้\n2.ได้กลิ่นแก๊ส\n -	ตรวจสอบรอยรั่วที่ข้อต่อต่าง ๆ\n -	หยุดการ operate ทันที";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "Troubleshooting LPG"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
@@ -98,7 +105,7 @@ if($arrJson['events'][0]['message']['text'] == "Wi PRU"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "นายช่างดูแลระบบ 2 ระบบ\n1.PRU\n2.LPGAir\n-----------------\nWi : work instruction\nEx. Wi PRU\n\nPid = piping and instrument diagram\nEx. Pid PRU\n\nSpec = รายละเอียดอุปกรณ์\nEx. Spec PRU PCV104\n\nStock = ตรวจเช็คจำนวอุปกรณ์\nEx. Stock PRU PCV104\n\nBuy = สั่งซื้ออุปกรณ์\nEx. Buy PRU PCV104\nTroubleshooting = ปัญหา\nEx. Troubleshooting PRU";  
+  $arrPostData['messages'][0]['text'] = "นายช่างดูแลระบบ 2 ระบบ\n1.PRU\n2.LPG\n-----------------\nWi : work instruction\nEx. Wi PRU\n\nPid = piping and instrument diagram\nEx. Pid PRU\n\nSpec = รายละเอียดอุปกรณ์\nEx. Spec PRU PCV104\n\nStock = ตรวจเช็คจำนวอุปกรณ์\nEx. Stock PRU PCV104\n\nBuy = สั่งซื้ออุปกรณ์\nEx. Buy PRU PCV104\nTroubleshooting = ปัญหา\nEx. Troubleshooting PRU";  
   }
 
   else{
