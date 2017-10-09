@@ -15,14 +15,14 @@ if($arrJson['events'][0]['message']['text'] == "WI PRU"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "https://drive.google.com/open?id=0B-XvT8qgmPvjekU2akhhaFhYZDg";
+  $arrPostData['messages'][0]['text'] = "1.นำสาย Flexible Hose มาต่อเข้ากับหัว Quick Connect\n2.นำสายก๊าซมาต่อเข้ากับหัว Quick Connect ที่นำไปใช้งาน\n3.เปิดวาล์วก่อน Vaporizing Regulator ช้า ๆ เพื่อไม่ให้เกิดความเสียหาย\n4.ปรับแรงดัน High Flow Regulator ตามการใช้งาน\n5.เปิดวาล์วหลัง High Flow Regulator\n6.เปิดสวิทซ์ Heater และ Mass Flow Meter\n7.เปิดวาล์วก๊าซนำไปใช้งาน\n8.เมื่อใช้งานเสร็จปิดวาล์วและ Vent ก๊าซออกระบบให้หมด";
   }
 
   else if($arrJson['events'][0]['message']['text'] == "WI LPGAir"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "1.	ตรวจเช็คการเดินเครื่องเสร็จ\n2.	แหล่งจ่ายไฟฟ้า : ตรวจเช็ค Power Lamp\n3.	เช็คอุณหภูมิน้ำ : ประมาณ 60-65 oC ใช้เวลาประมาณ 30 -40 นาที\n4.	เปิดวาล์วทางเข้าหม้อต้มแก๊ส : เปิดช้า ๆ (ในกรณีรีบเปิด อึปกรณ์ปิดกั้นจะทำงาน)\n5.	เช็คเกจวัดความดันหม้อต้มแก๊ส : เปรียบเทียบกับความดันของภาชนะและถังเก็บ\n6.	เปิดวาล์วทางออกหม้อต้มแก๊ส : เปิดช้า ๆ (ในกรณีรีบเปิด อึปกรณ์ปิดกั้นจะทำงาน)\n7.	ใช้แก๊ส";
+  $arrPostData['messages'][0]['text'] = "1.ตรวจเช็คการเดินเครื่องเสร็จ\n2.แหล่งจ่ายไฟฟ้า : ตรวจเช็ค Power Lamp\n3.เช็คอุณหภูมิน้ำ : ประมาณ 60-65 oC ใช้เวลาประมาณ 30 -40 นาที\n4.เปิดวาล์วทางเข้าหม้อต้มแก๊ส : เปิดช้า ๆ (ในกรณีรีบเปิดอุปกรณ์ปิดกั้นจะทำงาน)\n5.เช็คเกจวัดความดันหม้อต้มแก๊ส : เปรียบเทียบกับความดันของภาชนะและถังเก็บ\n6.เปิดวาล์วทางออกหม้อต้มแก๊ส : เปิดช้า ๆ (ในกรณีรีบเปิด อุปกรณ์ปิดกั้นจะทำงาน)\n7.ใช้แก๊ส";
   }
 
   else if($arrJson['events'][0]['message']['text'] == "PID PRU"){
