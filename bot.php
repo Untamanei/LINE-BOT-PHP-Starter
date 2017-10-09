@@ -66,7 +66,28 @@ if($arrJson['events'][0]['message']['text'] == "Wi PRU"){
   $arrPostData['messages'][0]['text'] = "PN : AVR4SP5240EHX\nBrand : Parker\nLead Time : 10-12 weeks\nCost : 59,300 Baht\nSupplier : Fint Fluid\n\nSaleperson\n-------------\nSippakorn\nE-mail : sippakorn@fintfluid.com\nTel : 0894444564";
   }
 
-  else if($arrJson['events'][0]['message']['text'] == "Troubshooting LPGAir"){
+  else if($arrJson['events'][0]['message']['text'] == "Spec LPGAir 16"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+   $arrPostData['messages'][0]['text'] = "Description\n================\nHigh Pressure Regulator\nFluid : LP-Gas\nPressure Control Range : 25-50 psi\nCapacity : 12,000,000 BTU/hr. LPG\n--------------\nInstall date : 8/2017\n--------------\nCallibrate : -";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "Stock LPGAir 16"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "0 ea.";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "Buy LPGAir 16"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "PN : 1588VL\nBrand : REGO\nLead Time : 10-12 weeks\nCost : 59,300 Baht\nSupplier : CECO\n\nSaleperson\n-------------\nSippakorn\nE-mail : ceco@cecogas.com\nTel : 027227929";
+  }
+
+  else if($arrJson['events'][0]['message']['text'] == "Troubleshooting LPGAir"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
