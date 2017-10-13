@@ -19,12 +19,12 @@ if($arrJson['events'][0]['message']['text'] == "test")
   $arrPostData['messages'][0]['text'] = "ลอง";
   }
 
-if($arrJson['events'][0]['message']['text'] == "test")
+if($arrJson['events'][1]['message']['text'] == "test")
 {
   $arrPostData = array();
-  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ลอง1";
+  $arrPostData['replyToken'] = $arrJson['events'][1]['replyToken'];
+  $arrPostData['messages'][1]['type'] = "text";
+  $arrPostData['messages'][1]['text'] = "ลอง1";
   }
 
 $ch = curl_init();
