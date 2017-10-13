@@ -19,6 +19,7 @@ if($arrJson['events'][]['message']['text'] == "test")
   $arrPostData['messages'][]['text'] = "ลอง";
   }
 
+if($arrJson['events'][]['message']['text'] == "test")
 {
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][]['replyToken'];
