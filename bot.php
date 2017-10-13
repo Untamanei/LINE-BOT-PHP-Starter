@@ -11,19 +11,19 @@ $arrHeader = array();
 $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
  
-if($arrJson['events'][0]['message']['text'] == "test")
+if($arrJson['events'][]['message']['text'] == "test")
 {
   $arrPostData = array();
-  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ลอง";
+  $arrPostData['replyToken'] = $arrJson['events'][]['replyToken'];
+  $arrPostData['messages'][]['type'] = "text";
+  $arrPostData['messages'][]['text'] = "ลอง";
   }
 
 {
   $arrPostData = array();
-  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ลอง1";
+  $arrPostData['replyToken'] = $arrJson['events'][]['replyToken'];
+  $arrPostData['messages'][]['type'] = "text";
+  $arrPostData['messages'][]['text'] = "ลอง1";
   }
 
 $ch = curl_init();
