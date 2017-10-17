@@ -18,6 +18,14 @@ if($arrJson['events'][0]['message']['text'] == "Wi PRU"){
   $arrPostData['messages'][0]['text'] = "1.นำสาย Flexible Hose มาต่อเข้ากับหัว Quick Connect\n2.นำสายก๊าซมาต่อเข้ากับหัว Quick Connect ที่นำไปใช้งาน\n3.เปิดวาล์วก่อน Vaporizing Regulator ช้า ๆ เพื่อไม่ให้เกิดความเสียหาย\n4.ปรับแรงดัน High Flow Regulator ตามการใช้งาน\n5.เปิดวาล์วหลัง High Flow Regulator\n6.เปิดสวิทซ์ Heater และ Mass Flow Meter\n7.เปิดวาล์วก๊าซนำไปใช้งาน\n8.เมื่อใช้งานเสร็จปิดวาล์วและ Vent ก๊าซออกระบบให้หมด";
   }
 
+  else if($arrJson['events'][0]['message']['text'] == "test"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "sticker";
+  $arrPostData['messages'][0]['packageId'] = "1";
+  $arrPostData['messages'][0]['stickerId'] = "1";
+  }
+
   else if($arrJson['events'][0]['message']['text'] == "Wi LPG"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
