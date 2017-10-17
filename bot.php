@@ -1,56 +1,33 @@
-$post = file_get_contents(‘php://input’);
-$urlReply = ‘https://api.line.me/v2/bot/message/reply';
-$token = ‘+LtQfr5HpAMhtJuE2VBQxoXiFARCnVXn3DNE8LkmGHTruOUXcxWIxh+IOBNhy2lQ8Q/nAbQdyX+yPeOtQ/GcvQQFH122gT6Lu0eqtci22BQjA48JGV9RJ3B8Rbi34ZiHy8+OUKms2JIlOT9hjVrAtAdB04t89/1O/w1cDnyilFU=’;
-
-function postMessage($token,$packet,$urlReply){
- $dataEncode = json_encode($packet);
- $headersOption = array(‘Content-Type: application/json’,’Authorization: Bearer ‘.$token);
- $ch = curl_init($urlReply);
- curl_setopt($ch,CURLOPT_CUSTOMREQUEST,’POST’);
- curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
- curl_setopt($ch,CURLOPT_POSTFIELDS,$dataEncode);
- curl_setopt($ch,CURLOPT_HTTPHEADER,$headersOption);
- curl_setopt($ch,CURLOPT_FOLLOWLOCATION,1);
- $result = curl_exec($ch);
- curl_close($ch);
-}
-
-{“events”:[{“type”:”message”,”replyToken”:”ไม่บอก”,”source”:{“userId”:”ไม่บอก”,”type”:”user”},”timestamp”:1477132643802,”message”:{“type”:”text”,”id”:”5094630491076",”text”:”ว่าไงท่าน”}}]}
-
-$res = json_decode($post, true);
-if(isset($res[‘events’]) && !is_null($res[‘events’])){
- foreach($res[‘events’] as $item){
- if($item[‘type’] == ‘message’){
- switch($item[‘message’][‘type’]){
- case ‘text’:
-break;
-case ‘image’:
-break;
- case ‘video’:
+<?php
  
- break;
- case ‘audio’:
+$strAccessToken = "+LtQfr5HpAMhtJuE2VBQxoXiFARCnVXn3DNE8LkmGHTruOUXcxWIxh+IOBNhy2lQ8Q/nAbQdyX+yPeOtQ/GcvQQFH122gT6Lu0eqtci22BQjA48JGV9RJ3B8Rbi34ZiHy8+OUKms2JIlOT9hjVrAtAdB04t89/1O/w1cDnyilFU=";
  
- break;
- case ‘location’:
-break;
- case ‘sticker’:
+$content = file_get_contents('php://input');
+$arrJson = json_decode($content, true);
+ 
+$strUrl = "https://api.line.me/v2/bot/message/reply";
+ 
+$arrHeader = array();
+$arrHeader[] = "Content-Type: application/json";
+$arrHeader[] = "Authorization: Bearer {$strAccessToken}";
 
- break;
-}
+if($arrJson['events'][0]['message']['text'] == "test"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "sticker";
+  $arrPostData['messages'][0]['packageId'] = "1";
+  $arrPostData['messages'][0]['stickerId'] = "1";
+  }
 
-function getSticker($replyToken){
- $sticker = array(
- ‘type’ => ‘sticker’,
- ‘packageId’ => ‘4’,
- ‘stickerId’ => ‘300’
- );
- $packet = array(
- ‘replyToken’ => $replyToken,
- ‘messages’ => array($sticker),
- );
- return $packet;
-}
-
-$packet = getSticker($item[‘replyToken’]);
- postMessage($token,$packet,$urlReply);
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL,$strUrl);
+curl_setopt($ch, CURLOPT_HEADER, false);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, $arrHeader);
+curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($arrPostData));
+curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+$result = curl_exec($ch);
+curl_close ($ch);
+ 
+?>
