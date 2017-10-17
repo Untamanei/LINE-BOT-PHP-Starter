@@ -17,28 +17,6 @@ function getSticker($replyToken){
  return $packet;
 }
 
-$res = json_decode($post, true);
-if(isset($res[‘events’]) && !is_null($res[‘events’])){
- foreach($res[‘events’] as $item){
- if($item[‘type’] == ‘message’){
- switch($item[‘message’][‘type’]){
- case ‘text’:
-break;
-case ‘image’:
-break;
- case ‘video’:
- 
- break;
- case ‘audio’:
- 
- break;
- case ‘location’:
-break;
- case ‘sticker’:
-
- break;
-}
-
 $packet = getSticker($item[‘replyToken’]);
  postMessage($token,$packet,$urlReply);
 
